@@ -9,7 +9,16 @@
     <h1>An Animated Data Visualization</h1>
     <p><a href="https://www.infino.me/mortality/usmap">Click here</a></p>
     <p>This is a link to a visualization about mortality in the U.S.<br>
-    The hover element is done in d3 as the book described how it could <br>
-    be done.</p>
+    The hover effect can be done simply by using :hover in CSS. <br>
+    However, :hover has limits on it's own. Thankfully, d3 can also <br>
+    accomplish the same effects on it's own.</p>
+    <p class="javascript">.on("mouseover", function(){</p>
+      <p class="javascript">d3.select(this)</p>
+        <p class="javascript">.attr("fill","gray");</p>
+    <p class="javascript">});</p>
+    <p>When the mouse moves over a rect, the event listener for <br>
+    that rect is triggered, the rect is selected as this, and <br>
+    then the fill is set to gray. All of this is done without <br>
+    CSS.</p>
   </body>
 </html>

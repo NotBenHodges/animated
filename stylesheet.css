@@ -1,5 +1,5 @@
 body{
-  background-color: #727380;
+  background-color: gray;
   text-align:center;
   font-family: sans-serif;
 }
@@ -10,4 +10,10 @@ h1{
 
 p{
   color: #191C59;
+}
+
+.javascript{
+  text-align: left;
+  text-indent: 400px;
+  color: black;
 }
